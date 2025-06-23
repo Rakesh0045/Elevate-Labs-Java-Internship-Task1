@@ -42,11 +42,5 @@ This is a simple **Java-based console calculator** developed as part of the Java
 * Input using `Scanner`
 * Console-based Java applications
 
-## 📸 Output (Sample)
-
-![Calculator Screenshot](screenshot.png)
-
-
-```
 
 
