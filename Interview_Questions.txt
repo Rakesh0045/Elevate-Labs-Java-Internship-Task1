@@ -1,0 +1,127 @@
+
+**Java Internship Task 1 – Interview Questions & Answers**
+
+---
+
+**1. What is method overloading?**
+Method overloading in Java means defining multiple methods with the same name in a class but with different parameter lists (type, number, or order).
+It increases code readability and reusability.
+
+Example:
+
+int add(int a, int b);  
+double add(double a, double b);
+
+---
+
+**2. How do you handle checked exceptions?**
+Checked exceptions are exceptions that must be handled at compile-time. You can handle them using:
+
+* try-catch block
+* throws keyword in method signature
+
+Example:
+
+try {
+    FileReader file = new FileReader("data.txt");
+} catch (FileNotFoundException e) {
+    System.out.println("File not found.");
+}
+
+---
+
+**3. Difference between == and .equals()?**
+
+* \== checks if two references point to the same memory location.
+* .equals() checks if two objects have the same value/content.
+
+Example:
+
+
+String a = new String("hello");
+String b = new String("hello");
+
+System.out.println(a == b);        // false (different memory)
+System.out.println(a.equals(b));   // true (same content)
+
+
+---
+
+**4. What are the basic data types in Java?**
+Java has 8 primitive data types:
+
+* byte: 1 byte (e.g., byte b = 10;)
+* short: 2 bytes (e.g., short s = 1000;)
+* int: 4 bytes (e.g., int i = 50000;)
+* long: 8 bytes (e.g., long l = 123L;)
+* float: 4 bytes (e.g., float f = 5.6f;)
+* double: 8 bytes (e.g., double d = 3.14;)
+* char: 2 bytes (e.g., char c = 'A';)
+* boolean: 1 bit (e.g., boolean b = true;)
+
+---
+
+**5. How is Scanner used for input?**
+Scanner is a Java utility class used to take user input from the console.
+
+Example:
+
+import java.util.Scanner;
+
+Scanner sc = new Scanner(System.in);
+int num = sc.nextInt();
+String name = sc.nextLine();
+
+
+---
+
+**6. Explain the use of for loop.**
+A for loop is used when the number of iterations is known in advance.
+
+Syntax:
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+
+
+---
+
+**7. Difference between while and for loop?**
+
+| Feature        | for loop                      | while loop                |
+| -------------- | ----------------------------- | ------------------------- |
+| Use case       | When iteration count is known | When condition is dynamic |
+| Syntax         | Compact and concise           | More flexible             |
+| Initialization | Done in loop declaration      | Done outside the loop     |
+
+---
+
+**8. What is the JVM?**
+JVM (Java Virtual Machine) is part of the Java Runtime Environment. It:
+
+* Converts bytecode into machine code
+* Provides platform independence
+* Handles memory, garbage collection, and security
+
+---
+
+**9. How is Java platform-independent?**
+Java is platform-independent because:
+
+* Java source code is compiled into bytecode
+* This bytecode runs on any platform that has a JVM
+* This allows "Write once, run anywhere"
+
+---
+
+**10. How do you debug a Java program?**
+Ways to debug a Java program:
+
+* Use print statements (System.out.println) to trace logic and values
+* Use IDE debugger with breakpoints and step-by-step execution
+* Use try-catch blocks to catch and display exceptions
+* Read stack traces to identify error line and type
+
+---
+
+
